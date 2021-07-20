@@ -48,3 +48,8 @@ export default {
   }),
 };
 </script>
+<style scoped>
+.main {
+  color: #2464e3;
+}
+</style>
