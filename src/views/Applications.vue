@@ -1,66 +1,124 @@
 <template>
-  <v-container grid-list-xl>
-    <v-layout flex-child wrap>
-      <v-flex xs12 md4 d-flex>
-        <v-sheet class="d-flex" color="#4583FF" height="500" width="400">
-          <sheet-footer> #1: (3r x 2c) </sheet-footer>
-        </v-sheet>
-      </v-flex>
+  <div id="e3" style="max-width: 1000px; margin: auto" class="grey lighten-3">
+    <v-toolbar color="pink" dark>
+      <v-toolbar-title class="justify-center">Applications </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon></v-icon>
+      </v-btn>
+    </v-toolbar>
 
-      <v-flex xs12 md4 d-flex>
-        <v-layout wrap>
-          <v-flex xs6>
-            <v-sheet class="d-flex" color="green lighten-3" height="150">
-              <sheet-footer> #2: (1r x 1c) </sheet-footer>
-            </v-sheet>
-          </v-flex>
-          <v-flex xs6>
-            <v-sheet class="d-flex" color="yellow lighten-3" height="150">
-              <sheet-footer> #3: (1r x 1c) </sheet-footer>
-            </v-sheet>
-          </v-flex>
+    <v-card>
+      <v-container fluid grid-list-lg>
+        <v-layout row wrap>
           <v-flex xs12>
-            <v-sheet class="d-flex" color="red lighten-3" height="250">
-              <sheet-footer> #5: (2r x 2c) </sheet-footer>
-            </v-sheet>
+            <v-card color="blue-grey darken-2" class="white--text">
+              <v-card-title primary-title>
+                <div>
+                  <div class="headline">
+                    Party Dash |
+                    <a href="https://partydash.com/" target="_blank"
+                      >https://partydash.com/
+                    </a>
+                  </div>
+                  <span
+                    >Listen to your favorite artists and albums whenever and
+                    wherever, online and offline.</span
+                  >
+                </div>
+              </v-card-title>
+              <v-card-actions>
+                <v-btn flat dark>Listen now</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+
+          <v-flex xs12>
+            <v-card color="cyan darken-2" class="white--text">
+              <v-layout>
+                <v-flex xs5>
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"
+                    height="125px"
+                    contain
+                  ></v-img>
+                </v-flex>
+                <v-flex xs7>
+                  <v-card-title primary-title>
+                    <div>
+                      <div class="headline">Supermodel</div>
+                      <div>Foster the People</div>
+                      <div>(2014)</div>
+                    </div>
+                  </v-card-title>
+                </v-flex>
+              </v-layout>
+              <v-divider light></v-divider>
+              <v-card-actions class="pa-3">
+                Rate this album
+                <v-spacer></v-spacer>
+                <v-icon>star_border</v-icon>
+                <v-icon>star_border</v-icon>
+                <v-icon>star_border</v-icon>
+                <v-icon>star_border</v-icon>
+                <v-icon>star_border</v-icon>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+
+          <v-flex xs12>
+            <v-card color="purple" class="white--text">
+              <v-layout row>
+                <v-flex xs7>
+                  <v-card-title primary-title>
+                    <div>
+                      <div class="headline">Halycon Days</div>
+                      <div>Ellie Goulding</div>
+                      <div>(2013)</div>
+                    </div>
+                  </v-card-title>
+                </v-flex>
+                <v-flex xs5>
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
+                    height="125px"
+                    contain
+                  ></v-img>
+                </v-flex>
+              </v-layout>
+              <v-divider light></v-divider>
+              <v-card-actions class="pa-3">
+                Rate this album
+                <v-spacer></v-spacer>
+                <v-icon>star_border</v-icon>
+                <v-icon>star_border</v-icon>
+                <v-icon>star_border</v-icon>
+                <v-icon>star_border</v-icon>
+                <v-icon>star_border</v-icon>
+              </v-card-actions>
+            </v-card>
           </v-flex>
         </v-layout>
-      </v-flex>
-      <v-flex xs6 md2>
-        <v-sheet class="d-flex" color="teal lighten-3" height="300">
-          <sheet-footer> #4: (2r x 1c) </sheet-footer>
-        </v-sheet>
-      </v-flex>
-      <v-flex xs6 md2 d-flex>
-        <v-sheet class="d-flex mt-auto" color="purple lighten-3" height="300">
-          <sheet-footer> #6: (2r x 1c) </sheet-footer>
-        </v-sheet>
-      </v-flex>
-    </v-layout>
-  </v-container>
+      </v-container>
+    </v-card>
+    <template>
+      <v-footer height="auto" color="primary lighten-1">
+        <v-layout justify-center row wrap>
+          <v-btn v-for="link in links" :key="link" color="white" flat round>
+            {{ link }}
+          </v-btn>
+          <v-flex primary lighten-2 py-3 text-xs-center white--text xs12>
+            &copy;2021 — <strong>Vuetify</strong>
+          </v-flex>
+        </v-layout>
+      </v-footer>
+    </template>
+  </div>
 </template>
-
 <script>
 export default {
-  components: {
-    SheetFooter: {
-      functional: true,
-
-      render(h, { children }) {
-        return h(
-          "v-sheet",
-          {
-            staticClass: "mt-auto align-center justify-center d-flex",
-            props: {
-              color: "rgba(0, 0, 0, .36)",
-              dark: true,
-              height: 50,
-            },
-          },
-          children
-        );
-      },
-    },
-  },
+  data: () => ({
+    links: [],
+  }),
 };
 </script>
