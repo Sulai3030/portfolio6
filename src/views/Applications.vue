@@ -150,7 +150,7 @@
                                     scheme and front-end components.
                                   </div>
                                 </div>
-                                <div>
+                                <p>
                                   The GOAT Voter App is a one-stop platform
                                   where voters can access information about
                                   candidates running for political offices
@@ -163,11 +163,14 @@
                                   their district. In addition, users can enter
                                   their address to find out where their polling
                                   site is located and request transportation on
-                                  election day. Technologies used: JavaScript,
-                                  Handlebars, Bootstrap, CSS Parallax, Node.js,
-                                  Express, Sequelize, Google Civic Information
-                                  API, Heroku
-                                </div>
+                                  election day.
+                                </p>
+                                <p>
+                                  Technologies used: JavaScript, Handlebars,
+                                  Bootstrap, CSS Parallax, Node.js, Express,
+                                  Sequelize, Google Civic Information API,
+                                  Heroku
+                                </p>
                               </v-card-title>
                             </v-flex>
                             <v-flex xs5> </v-flex>
