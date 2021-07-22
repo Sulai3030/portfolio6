@@ -4,7 +4,7 @@
       <v-flex xs12 md4 d-flex>
         <v-layout wrap>
           <v-flex xs12>
-            <v-sheet elevation="24" color="#2464E3" height="1250" width="1250"
+            <v-sheet elevation="24" color="#2464E3" height="1450" width="1250"
               ><div
                 id="e3"
                 style="max-width: 1100px; margin: auto"
@@ -56,8 +56,7 @@
                               <a
                                 href="https://partydash.com/pages/about-us"
                                 target="_blank"
-                                >More Info</a
-                              >
+                              ></a>
                             </div>
                           </v-card-title>
                           <v-card-actions> </v-card-actions>
@@ -75,21 +74,37 @@
                             <v-flex xs7>
                               <v-card-title primary-title>
                                 <div>
-                                  <div class="headline">Project 2.</div>
-                                  <div>
-                                    RuneSkype
-                                    <a
-                                      href="https://runeskype.heroku.app/"
-                                      target="_blank"
-                                      >https://github.com/Jroze88/RuneSkype</a
-                                    >
+                                  <div class="headline">
+                                    Project 2.
+                                    <p>
+                                      RuneSkype
+                                      <a
+                                        href="https://runeskype.heroku.app/"
+                                        target="_blank"
+                                        >https://github.com/Jroze88/RuneSkype</a
+                                      >
+                                    </p>
                                   </div>
+
                                   <div>Responsibilities</div>
                                   <div>
                                     Front-end design, Linting, cleaning up
                                     frontend and backend code and making sure
                                     both sides work together.
                                   </div>
+
+                                  Technologies used: ReactJS, ChanceJS, Node,
+                                  Express, Firebase, Twilio-Video, Twilio,
+                                  WebRTC, Axios. Express, Faker, jQuery,
+                                  React-dnd, React-dnd-html5-backend,React-dom,
+                                  React-draggable, React-router-dom,
+                                  Webpack-dev-middleware, Webpack hot-middleware
+
+                                  <a
+                                    href="https://github.com/Sulai3030/RuneSkype"
+                                    target="_blank"
+                                    >More Info</a
+                                  >
                                 </div>
                               </v-card-title>
                             </v-flex>
@@ -107,34 +122,64 @@
                       </v-flex>
 
                       <v-flex xs12>
-                        <v-card color="#0D5DFF" class="white--text">
+                        <v-card
+                          elevation="24"
+                          outlined
+                          shaped
+                          color="#0D5DFF"
+                          class="white--text"
+                        >
                           <v-layout row>
                             <v-flex xs7>
                               <v-card-title primary-title>
                                 <div>
-                                  <div class="headline">Halycon Days</div>
-                                  <div>Ellie Goulding</div>
-                                  <div>(2013)</div>
+                                  <div class="headline">Project 3.</div>
+                                  <div>
+                                    <p>
+                                      The GOAT Voter App |
+                                      <a
+                                        href="http://www.goatvoter.org/"
+                                        target="_blank"
+                                        >http://www.goatvoter.org/</a
+                                      >
+                                    </p>
+                                  </div>
+
+                                  <div>
+                                    Front-End Design, created the CSS color
+                                    scheme and front-end components.
+                                  </div>
+                                </div>
+                                <div>
+                                  The GOAT Voter App is a one-stop platform
+                                  where voters can access information about
+                                  candidates running for political offices
+                                  anywhere in the United States. The GOAT Voter
+                                  App streamlines information and increases
+                                  voter participation. repo: By entering their
+                                  zip code in a search field, users will be able
+                                  to search and access detailed information
+                                  about all candidates running for election in
+                                  their district. In addition, users can enter
+                                  their address to find out where their polling
+                                  site is located and request transportation on
+                                  election day. Technologies used: JavaScript,
+                                  Handlebars, Bootstrap, CSS Parallax, Node.js,
+                                  Express, Sequelize, Google Civic Information
+                                  API, Heroku
                                 </div>
                               </v-card-title>
                             </v-flex>
-                            <v-flex xs5>
-                              <v-img
-                                src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
-                                height="125px"
-                                contain
-                              ></v-img>
-                            </v-flex>
+                            <v-flex xs5> </v-flex>
                           </v-layout>
                           <v-divider light></v-divider>
                           <v-card-actions class="pa-3">
-                            Rate this album
                             <v-spacer></v-spacer>
-                            <v-icon>star_border</v-icon>
-                            <v-icon>star_border</v-icon>
-                            <v-icon>star_border</v-icon>
-                            <v-icon>star_border</v-icon>
-                            <v-icon>star_border</v-icon>
+                            <v-icon></v-icon>
+                            <v-icon></v-icon>
+                            <v-icon></v-icon>
+                            <v-icon></v-icon>
+                            <v-icon></v-icon>
                           </v-card-actions>
                         </v-card>
                       </v-flex>
@@ -142,12 +187,11 @@
                   </v-container>
                 </v-card>
               </div>
-              <sheet-footer> #5: (2r x 2c) </sheet-footer>
             </v-sheet>
           </v-flex>
         </v-layout>
-      </v-flex>
-    </v-layout>
+      </v-flex> </v-layout
+    ><sheet-footer> #5: (2r x 2c) </sheet-footer>
   </v-container>
 </template>
 <script>
@@ -193,3 +237,8 @@ export default {
   }),
 };
 </script>
+<style scoped>
+a {
+  color: #fff;
+}
+</style>
