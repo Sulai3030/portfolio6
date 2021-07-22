@@ -32,6 +32,7 @@
                           <v-card-title primary-title>
                             <div>
                               <div class="headline">Project 1.</div>
+                              <p>Front-End Design</p>
                               <span
                                 ><a
                                   href="https://partydash.com/"
@@ -40,11 +41,12 @@
                                 ></span
                               >
                             </div>
-                            <p>Front-End Design</p>
+
                             <p>
                               We built Party Dash with a simple goal in mind: to
                               help party hosts plan parties more easily.
                             </p>
+
                             <p>Responsibilities:</p>
                             <p></p>
                             Follow design specs handed down from site owner.

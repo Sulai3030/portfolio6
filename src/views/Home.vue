@@ -2,7 +2,7 @@
   <div id="e3" style="max-width: 1400px; margin: auto" class="grey lighten-3">
     <v-toolbar color="pink" dark>
       <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title></v-toolbar-title>
+      <v-toolbar-title>Sulai Sivadel: Web Developer</v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
     <v-card>
@@ -13,6 +13,9 @@
               color="#4583FF"
               class="white--text"
               style="max-width: 1200px; margin: auto"
+              elevation="24"
+              outlined
+              shaped
             >
               <v-card-title primary-title>
                 <div>
@@ -34,24 +37,23 @@
               color="#8FBD33"
               class="white--text"
               style="max-width: 1200px; margin: auto"
+              elevation="24"
+              outlined
+              shaped
             >
               <v-layout>
                 <v-flex xs7>
                   <v-card-title primary-title>
                     <div>
-                      <div>
-                        <div class="headline">
-                          A flexible and quick learner committed to constantly
-                          learning learning and evolving his skills to stay
-                          abreast of ever-evolving technologies and trends in
-                          the industry. Communicative, knowledgeable and
-                          steadfast with excellent computer engineering skills
-                          learned in the Columbia University Coding Bootcamp
-                          where he created projects in HTML5, CSS, JavaScript,
-                          VueJS, and ReactJS.
-                        </div>
-                      </div>
-                      <div></div>
+                      <p class="text-left">
+                        A flexible and quick learner committed to constantly
+                        learning learning and evolving his skills to stay
+                        abreast of ever-evolving technologies and trends in the
+                        industry. Communicative, knowledgeable and steadfast
+                        with excellent computer engineering skills learned in
+                        the Columbia University Coding Bootcamp where he created
+                        projects in HTML5, CSS, JavaScript, VueJS, and ReactJS.
+                      </p>
                     </div>
                   </v-card-title>
                 </v-flex>
@@ -73,6 +75,9 @@
               color="#BD4833"
               class="white--text"
               style="max-width: 1200px; margin: auto"
+              elevation="24"
+              outlined
+              shaped
             >
               <v-layout row>
                 <v-flex xs7>
