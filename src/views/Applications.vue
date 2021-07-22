@@ -4,7 +4,7 @@
       <v-flex xs12 md4 d-flex>
         <v-layout wrap>
           <v-flex xs12>
-            <v-sheet elevation="24" color="#2464E3" height="1450" width="1250"
+            <v-sheet elevation="24" color="#1B4DB3" height="1450" width="1250"
               ><div
                 id="e3"
                 style="max-width: 1100px; margin: auto"
